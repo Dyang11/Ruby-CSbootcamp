@@ -6,8 +6,10 @@ while input != 'BYE'
   else
     if input != input.upcase
       puts 'HUH?! SPEAK UP, SONNY!'
-    elsif input == input.upcase
+   else
+      if input == input.upcase
         puts 'NO, NOT SINCE ' + (1950-rand(21)).to_s + '!'
+      end
     end
   end
 end
