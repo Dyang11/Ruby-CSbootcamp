@@ -1,10 +1,13 @@
 number = 99
-while number != 1
+while number != 2
   puts number.to_s + ' bottles of beer on the wall, ' + number.to_s + ' bottles of beer.'
   puts 'Take one down, pass it around, ' + (number - 1).to_s + ' bottles of beer on wall.'
   puts ' '
-  number = (number.to_i - 1)
+  number = number - 1
 end
+puts '2 bottles of beer on the wall, 2 bottles of beer.'
+puts 'Take one down, pass it around, 1 more bottle of beer on the wall.'
+puts ' '
 puts '1 bottle of beer on the wall, 1 bottle of beer.'
 puts 'Take one down, pass it around, no more bottles of beer on the wall.'
 puts ' '
