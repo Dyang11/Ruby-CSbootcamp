@@ -5,12 +5,11 @@ while response.to_i < 3
     puts 'DID YOU SAY SOMETHING?'
     (response = response + 1)
   else
+    response = 0
     if input != input.upcase
       puts 'HUH?! SPEAK UP, SONNY!'
     else
-      if input == input.upcase
-        puts 'NO, NOT SINCE ' + (1950 - rand(21)).to_s + '!'
-      end
+      puts 'NO, NOT SINCE ' + (1950 - rand(21)).to_s + '!'
     end
   end
 end
