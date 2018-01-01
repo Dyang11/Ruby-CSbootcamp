@@ -6,11 +6,7 @@ word_entries = ' '
 while word_entries != ''
   word_entries = gets.chomp.capitalize
   if word_entries != ''
-  word_list.push word_entries
-  else
-    if word_entries == ''
-      break
-    end
+    word_list.push word_entries
   end
 end
 puts 'The ' + word_list.length.to_s + ' words you entered listed in alphabetical order are:'
