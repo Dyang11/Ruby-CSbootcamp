@@ -1,5 +1,4 @@
-puts 'Hello there! I can return a list of words you enter in alphabetical order,!'
-puts 'This time, feel free to use capital letters.'
+puts 'Hello there! I can return a list of words you enter in alphabetical order!'
 puts 'Please type one word per line and use the return key after each entry.'
 puts 'Press the return key on an empty entry to finish.'
 word_list = []
@@ -24,7 +23,7 @@ def program_sort not_done, done
   unsorted = []
 
   not_done.each do |item|
-    if item.upcase < hold.upcase
+    if item < hold
       unsorted.push hold
       hold = item
     else
